@@ -1,16 +1,35 @@
-# notification
+# notification with firebase App
+This is the flutter application that integrate well with Firebase using the FCM tokens. This is app is made to help new users to understand and able to use FCM to communicate their apps and Firebase.
 
-This is the app to demonstrate how to notification using firebase.
+## How to install:
+1. Make sure you have android studio/vscode for easy installation, and create a new flutter app.
+> `flutter create notification`
+> Here the name of the application is `notification`
+2. Install the firebase in your system. If you don't know how click [here](https://firebase.google.com/docs/flutter/setup?platform=android)
+3. Login to your firebase in command line.
+> `firebase login`
+4. Activate the firebase CLI
+> `dart pub global activate flutterfire_cli`
+5. Configure your flutterfire to your account
+> `flutterfire configure`
+> Or you can just type `flutterfire configure --project={projectname as seen from firebase}`
 
-## Getting Started
+Now you will be successfully connect your flutterfire with your project, and if you navigate to your firebase account, you'll see that this app is connected to your account.
 
-This project is a starting point for a Flutter application.
+Followed by adding these dependencies,
+```bash
+flutter pub add firebase_core
+flutter pub add firebase_messaging
+flutter pub add firebase_analytics
+```
 
-A few resources to get you started if this is your first Flutter project:
+To send message to your app just,
+1. Navigate to your [Firebase console](https://console.firebase.google.com).
+2. Go to messaging, located under Run>Messaging on the your left dashboard.
+3. Now on the top you will click `create new campaign`, on the pop up choose whatever you want(Or just choose the first choice).
+4. Then you will be asked to fill title, notification text, and notification image(it is optional but in some cases it needs to be filled so it can work).
+5. On the right side you will see ` Device preview`, downside you can click `send text message`.
+6. And the message will pop up on your device.
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+Finally you can copy the codes from this project and implememnt them in your app.

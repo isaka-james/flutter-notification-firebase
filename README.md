@@ -33,3 +33,18 @@ To send message to your app just,
 
 
 Finally you can copy the codes from this project and implememnt them in your app.
+
+## SCREENSHOTS
+### Firebase console
+![firebase-console.png](docs%2Ffirebase-console.png)
+
+### Home Screen
+![home.png](docs%2Fhome.png)
+
+## Notification Screen
+![transaction-complete.png](docs%2Ftransaction-complete.png)
+
+### How this App works
+This app receives the app notification from the firebase, and when you click the notification it directly goes to the notification screen with the information about the notification.
+
+<img src="https://komarev.com/ghpvc/?username=flutter-nav&label=Project-Views&color=0e75b6&style=flat" alt="since 21 Feb,2024" />
